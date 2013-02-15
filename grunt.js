@@ -27,7 +27,7 @@ module.exports = function( grunt ) {
 		return path.join( dirs.output, name );
 	}
 
-	demosjsFile = path.join( dirs.output, "demos", "docs", "demos", "_assets", "js", names.demosjs );
+	demosjsFile = path.join( dirs.output, "demos", "_assets", "js", names.demosjs );
 	rootFile = outputPath( names.root );
 	structureFile = outputPath( names.structure );
 	themeFile = outputPath( names.theme );
@@ -92,10 +92,10 @@ module.exports = function( grunt ) {
 
 			demosjs: {
 				src: [
-					path.join( 'docs', 'demos', '_assets', 'js', 'jqm-demos.js' ),
-					path.join( 'docs', 'demos', '_assets', 'js', 'view-source.js' ),
-					path.join( 'docs', 'demos', '_assets', 'js', 'h2widget.js'),
-					path.join( 'docs', 'demos', '_assets', 'js', 'globalnav-panel.js')
+					path.join( 'demos', '_assets', 'js', 'jqm-demos.js' ),
+					path.join( 'demos', '_assets', 'js', 'view-source.js' ),
+					path.join( 'demos', '_assets', 'js', 'h2widget.js'),
+					path.join( 'demos', '_assets', 'js', 'globalnav-panel.js')
 				],
 				dest: demosjsFile + '.js'
 			},
