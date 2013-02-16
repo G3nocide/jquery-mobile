@@ -64,3 +64,22 @@ $( document ).on( "pageinit", function() {
 
 	$( "p.jqm-version" ).html( html );
 });
+
+
+// global search
+$( document ).on( "pageinit", ".jqm-demos", function() {
+	$( this ).find( ".jqm-search ul" ).listview({
+		globalNav: "demos",
+		inset: true,
+		theme: "d",
+		dividerTheme: "d",
+		icon: false,
+		filter: true,
+		filterReveal: true,
+		filterPlaceholder: "Search...",
+		autodividers: true,
+		autodividersSelector: function ( li ) {
+    		return "";
+  		}
+	});	
+});
